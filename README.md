@@ -66,3 +66,5 @@ Backend Integration:
      * Connect to a database or API for dynamic product loading and persistent cart data.
 This implementation is ideal for beginners building an interactive e-commerce page while providing a base for more advanced features
 ![E commerce-1](https://github.com/user-attachments/assets/e995bfb9-3b95-4728-83cd-c3599e0134e8)
+![E commerce-2](https://github.com/user-attachments/assets/bcedc903-e359-460a-a365-3c5293f0c9ce)
+
