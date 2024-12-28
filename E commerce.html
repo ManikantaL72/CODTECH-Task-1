@@ -1,0 +1,145 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Simple E-Commerce
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+   <h1 class="text-2xl font-bold">
+    My E-Commerce Store
+   </h1>
+   <div class="cart flex items-center">
+    <i class="fas fa-shopping-cart mr-2">
+    </i>
+    <span id="cart-count">
+     0
+    </span>
+    items
+   </div>
+  </header>
+  <main class="p-4">
+   <section class="products grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="product bg-white p-4 rounded shadow" data-id="1" data-name="Graphics Card" data-price="300">
+     <img alt="Image of a Graphics Card, a high-performance GPU with multiple cooling fans and sleek design" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/j4EenyX5k91xDa11sH0pZvlAEQpaqLgwEYEjf8goYFdoQh6TA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mb-2">
+      Graphics Card
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Price: $300
+     </p>
+     <button class="add-to-cart bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+      Add to Cart
+     </button>
+    </div>
+    <div class="product bg-white p-4 rounded shadow" data-id="2" data-name="Motherboard" data-price="150">
+     <img alt="Image of a Motherboard, a high-end motherboard with multiple slots and ports for various components" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/SFhYNDw5wSLBKBFgBvoQ74YP6Epaq9DdY5y62Ym5z2QKUoeJA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mb-2">
+      Motherboard
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Price: $150
+     </p>
+     <button class="add-to-cart bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+      Add to Cart
+     </button>
+    </div>
+    <div class="product bg-white p-4 rounded shadow" data-id="3" data-name="Processor" data-price="250">
+     <img alt="Image of a Processor, a powerful CPU with advanced cooling technology" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/1VVmNyQ7wJI6Id70zizDxwA0b4K5K8m6lAKVTDRzmwHLUoeJA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mb-2">
+      Processor
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Price: $250
+     </p>
+     <button class="add-to-cart bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+      Add to Cart
+     </button>
+    </div>
+    <div class="product bg-white p-4 rounded shadow" data-id="4" data-name="RAM" data-price="80">
+     <img alt="Image of RAM, a high-speed memory module with sleek heat spreaders" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/CFv3AU4JqGoIG94HYMoTePdBGwDfvWA35AeSDF1pMmcPhC1nA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mb-2">
+      RAM
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Price: $80
+     </p>
+     <button class="add-to-cart bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+      Add to Cart
+     </button>
+    </div>
+    <div class="product bg-white p-4 rounded shadow" data-id="5" data-name="Power Supply" data-price="100">
+     <img alt="Image of a Power Supply, a high-efficiency PSU with modular cables" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/fFMuRhA8GCTpZygvXgU2EheHqbmhw5NZqu3tV1HzRvntQh6TA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mb-2">
+      Power Supply
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Price: $100
+     </p>
+     <button class="add-to-cart bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+      Add to Cart
+     </button>
+    </div>
+    <div class="product bg-white p-4 rounded shadow" data-id="6" data-name="SSD" data-price="120">
+     <img alt="Image of an SSD, a high-speed solid-state drive with a sleek design" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/S7a2fFtk7xy6IqkM0le2l0ppkBJlObsf2jHB1l7HBPFWhC1nA.jpg" width="300"/>
+     <h2 class="text-xl font-bold mb-2">
+      SSD
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Price: $120
+     </p>
+     <button class="add-to-cart bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+      Add to Cart
+     </button>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-gray-800 text-white text-center p-4 mt-4">
+   <p>
+    © 2024 My E-Commerce Store
+   </p>
+  </footer>
+  <script>
+   const cart = [];
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const addToCartButtons = document.querySelectorAll(".add-to-cart");
+      const cartCountElement = document.getElementById("cart-count");
+
+      addToCartButtons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const productElement = event.target.closest(".product");
+          const productId = productElement.dataset.id;
+          const productName = productElement.dataset.name;
+          const productPrice = parseFloat(productElement.dataset.price);
+
+          // Add product to cart
+          const existingProduct = cart.find((item) => item.id === productId);
+          if (existingProduct) {
+            existingProduct.quantity++;
+          } else {
+            cart.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
+          }
+
+          // Update cart count
+          const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+          cartCountElement.textContent = totalItems;
+
+          console.log(cart); // For debugging
+        });
+      });
+    });
+  </script>
+ </body>
+</html>
